@@ -1,0 +1,504 @@
+/* progressbar */
+.bi-x-octagon::marker {
+    display: none !important;
+}
+
+.progress {
+    transform: rotate(90deg);
+    z-index: -1;
+    width: 100% !important;
+    max-width: 186px;
+    background: var(--secondary-color-light);
+    border: 1px solid var(--secondary-color-dark);
+    position: absolute;
+    transform-origin: left;
+    margin: auto;
+    left: 16.5px;
+    height: 4.2px !important;
+}
+
+.progress-bar {
+    background-color: var(--secondary-color) !important;
+}
+
+.bi::before {
+    color: var(--secondary-color-dark);
+}
+
+.orders-tab {
+    margin: 10px 0 10px 0 !important;
+    border: 0 !important;
+    display: flex;
+    gap: 10px;
+}
+
+.orders-tab .nav-item button {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.orders-tab .nav-item {
+    padding: 10px 0 0 0;
+}
+
+.orders-tab .nav-item button.active {
+
+    background-color: var(--secondary-color);
+    color: #fff;
+
+}
+
+.order-list .order-list-table {
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--second-cards-color);
+    border-radius: 8px;
+
+}
+
+.track-order-icon {
+    border: 1px solid var(--secondary-color-dark) !important;
+}
+
+.track-order-icon:hover {
+    background-color: var(--secondary-color) !important;
+}
+
+.order-list .order-list-table thead {
+    background-color: var(--secondary-color);
+}
+
+.order-list .order-list-table thead tr th:first-child,
+.order-list .order-list-table tbody tr th:first-child,
+.order-list .order-list-table thead tr th:last-child,
+.order-list .order-list-table tbody tr th:last-child {
+    padding: 5px 15px;
+}
+
+.order-list .order-list-table thead tr th {
+    color: var(--text-field-color);
+    ;
+    padding: 5px;
+}
+
+.order-list .order-list-table thead tr th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.order-list .order-list-table thead tr th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.order-list .order-list-table tbody tr.last-column th:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+
+.order-list .order-list-table tbody tr.last-column th:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+.order-list .order-list-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.order-list .order-list-table tbody tr:last-child {
+    border: none;
+}
+
+.order-list .order-list-table tbody tr th {
+    padding: 5px;
+    font-weight: 500;
+}
+
+.order-list .order-list-table tbody tr th.button-container {
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width: 467px) {
+    .order-list .order-list-table tbody tr th.button-container {
+        flex-direction: column;
+    }
+}
+
+.order-list .order-list-table tbody tr th.button-container button {
+    padding: 4px 10px;
+    color: var(--text-field-color);
+    border-radius: 5px;
+
+    font-size: 1.455rem;
+}
+
+.order-list .order-list-table tbody tr th.button-container button.track {
+    background: var(--secondary-color);
+}
+
+.order-list .order-list-table tbody tr th.button-container button.Invoice {
+    background: var(--secondary-color);
+}
+
+.no-orders {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.no-orders img {
+    width: 30vw;
+}
+
+.no-orders p {
+    font-size: 2.455rem;
+    font-weight: bolder;
+    margin-top: 20px
+}
+
+#mainContentTrack .page-header {
+    font-size: 14px;
+}
+
+
+/* Order Details Page */
+
+
+.cover {
+    height: 200px;
+}
+
+.cover .page-heading {
+    position: relative;
+    bottom: 50%;
+    text-align: center;
+}
+
+@media (max-width:479px) {
+    .cover .page-heading {
+        position: relative;
+        bottom: 69%;
+        text-align: center;
+    }
+}
+
+.cover .page-heading h3 {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text-field-color);
+}
+
+.cover .page-heading p {
+    font-size: 1.985rem;
+    font-weight: 600;
+    color: var(--text-field-color);
+    cursor: pointer;
+}
+.cover .page-heading p strong {
+    color: #fff;
+}
+.cover .page-heading span {
+    color: var(--secondary-color);
+}
+
+
+.cover img {
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%);
+    z-index: -1;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center center;
+}
+
+
+@media (max-width:479px) {
+
+    .cover {
+        height: 115px;
+    }
+
+}
+
+
+.order-container,
+.order-info {
+    margin: 30px 0;
+}
+
+.order-container .list-container {
+    border-radius: 12px;
+    padding: 40px;
+    border: 0.5px solid #141a1f26;
+    background-color: var(--second-cards-color);
+}
+
+.order-container .container-heading span {
+    font-size: 32px;
+}
+
+.order-container .container-body {
+    margin: 20px 0;
+}
+
+.order-container .container-body .table-container thead {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+
+.order-container .container-body .table-container thead th {
+    font-size: 20px;
+    color: var(--second-cards-color);
+    padding: 12px;
+}
+
+.order-container .container-body .table-container thead th:is(:first-child) {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.order-container .container-body .table-container thead th:is(:last-child) {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.order-container .container-body .table-container tbody {
+    border: 0 !important;
+}
+.order-container .container-body .table-container tbody tr.disabled {
+    background-color: #ddd;
+}
+.order-container .container-body .table-container .image-container {
+    width: 100px;
+}
+
+.order-container .container-body .table-container .image-container img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    border: 1px solid #141a1f26;
+}
+
+.order-container .container-body .table-container .item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.order-container .container-body .table-container .product {
+    display: flex !important;
+    gap: 30px;
+}
+
+.order-container .container-body .table-container td {
+    border: 0 !important;
+    vertical-align: middle;
+}
+
+.order-container .container-body .table-container .item-container .item-name {
+    font-size: 16px;
+
+}
+.order-container .container-body .table-container .item-container .item-quantity {
+    font-size: 12px;
+}
+.order-container .container-body .table-container .item-container .item-variant {
+    padding: 8px;
+    background-color: var(--container-bg);
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+.order-container .container-body .table-container .price-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    gap: 5px;
+}
+
+.order-container .container-body .table-container .price-container .discounted-price {
+    color: var(--secondary-color) !important;
+}
+
+.order-container .container-body .table-container .price-container .original-price {
+    text-decoration: line-through;
+}
+
+
+.order-container .container-body .table-container .actions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.order-container .container-body .table-container .actions-container button {
+    padding: 4px 8px;
+    font-size: 14px;
+    background-color: rgba(255, 0, 0, 0.575);
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+.order-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-info .order-info-container {
+    border-radius: 12px;
+    padding: 20px;
+    border: 0.5px solid #141a1f26;
+    background-color: var(--second-cards-color);
+    width: 100%;
+}
+
+.order-info .order-info-container .container-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    position: relative;
+}
+
+.order-info .order-info-container .container-heading::before {
+    content: "";
+    position: absolute;
+    height: 0.5px;
+    width: 100%;
+    bottom: 0;
+    background-color: #bbb;
+}
+
+.order-info .order-info-container .container-heading::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 40%;
+    bottom: -1.7px;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+}
+
+.order-info .order-status-container .status-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+.order-info .order-status-container .status-body .checkmark input {
+    height: 20px;
+    width: 20px;
+}
+
+.order-info .order-status-container .status-body .checkmark input:checked {
+    accent-color: var(--secondary-color) !important;
+
+}
+
+.order-info .order-status-container .status-body .order-status-details .order-status{
+    font-weight: 700;
+}
+.order-info .order-status-container .status-body .order-status-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 13px;
+    gap: 10px;
+}
+
+.order-info .order-status-container .status-body .payment-status span {
+    padding: 4px;
+    background-color: rgb(242, 165, 165);
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+}
+
+.order-info .order-status-container .status-body .payment-status span.done {
+    background-color: var(--secondary-color-light);
+}
+
+
+.order-info .order-delivery-info .container-body {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    gap: 15px;
+}
+.order-info .order-delivery-info .container-body * {
+    color: #929292;
+}
+.order-info .order-delivery-info .container-body .address-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.order-info .order-delivery-info .container-body .address-container .address-heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+.order-info .order-billing-container .payment-info{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.order-info .order-billing-container .payment-info div{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    font-size: 16px;
+    gap: 15px;
+}
+
+.order-info .order-billing-container .order-total {
+    border-top: 1px solid #aaa;
+    padding-top: 20px;
+}
+
+.order-info .order-billing-container .order-total div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.order-info .order-billing-container .order-total div span:last-child {
+    color: var(--secondary-color);
+}
+
+.order-info .order-billing-container .button-container button {
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.order-tracker {
+    max-height: 50% !important;
+    display: flex !important;
+    padding: 0 !important;
+    transform: translateY(100%);
+}

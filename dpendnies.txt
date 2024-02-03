@@ -1,0 +1,9 @@
+@paypal/react-paypal-js @paystack/inline-js @react-google-maps/api 
+@reduxjs/toolkit @stripe/react-stripe-js 
+@stripe/stripe-js axios bootstrap bootstrap-icons firebase 
+firebase-tools framer-motion i18next  jwt-decode lottie-react otp-input-react 
+razorpay react react-bootstrap react-calendar react-confirm-alert react-dom 
+react-i18next react-icons  react-id-swiper react-js-pagination react-owl-carousel 
+react-paystack react-phone-input-2 react-razorpay react-redux react-router-dom 
+react-scripts react-select react-share react-slick react-slider react-toastify redux-persist slick-carousel swiper universal-cookie validator
+  
